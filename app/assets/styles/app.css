@@ -110,7 +110,7 @@ input[type="text"]:focus{
     background: white;
 }
 
-.textInput{
+#textInput{
   font-size: 0.9em;
   line-height: 30px;
   height:30px;

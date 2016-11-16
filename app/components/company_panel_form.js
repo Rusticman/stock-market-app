@@ -24,6 +24,7 @@ class CompanyPanelForm extends Component {
  else{
      this.props.showErrorMessage("This company already exists") //run action that shows the symbol is already there
  }
+    value.symbol = ''; //removes text from input
 
   }
 
@@ -42,7 +43,7 @@ if(chartData.length < nextProps.chartData.length){
     return (
 
         <form className="searchForm" autoComplete="off" onSubmit={handleSubmit(this.handleSymbolSubmit.bind(this))}>
-          <Field name="symbol" className="textInput" placeholder="type stock symbol here..." type="text"  component="input" label="Symbol"/>
+          <Field name="symbol" id="textInput" placeholder="type stock symbol here..." type="text"  component="input" label="Symbol"/>
           <button action="submit" className="submitButton">Add Stocks</button>
           <div className={this.props.errorOpacity + " errorMessage"}>{this.props.errorMessage}</div>
         </form>
