@@ -19,7 +19,7 @@ setTimeout(() => {
     this.props.initialiseGraph(lineGraphVar);
 
   }
-},800);
+},2000);
 }
 
 
