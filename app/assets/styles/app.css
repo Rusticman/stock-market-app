@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*initial styling start */
+* {
+  margin: 0;
+  padding: 0;
+  border:0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .appContainer{
+  height:100%;
+}
+
+body {
+  background-image: url('../img/wallpaper.png');
+  font-family: 'Roboto', sans-serif;
+  color:#8c8c8c;
+}
+
+.transparent{
+  opacity:0;
+}
+
+
+/*initial styling end */
+
+/* graph start */
+
+.graphContainer{
+  overflow:auto;
+  position:relative;
+  margin-bottom:50px;
+}
+
+h1{
+  margin-top: 3px;
+  text-align: center;
+  color:#8c8c8c;
+  vertical-align: middle;
+}
+
+.logo{
+  width:15%;
+  padding-top: 10px;
+  position:absolute;
+  top:24%;
+  right:43%;
+  z-index:-1;
+}
+
+/* graph end */
+
+/*chart start */
+.chartContainer{
+  float:left;
+  margin-left:18%;
+  width:65%;
+  min-width: 350px;
+  min-height: 400px;
+}
+/*just to initialise */
+canvas#chart{
+  width: 10px;
+  height: 10px;
+  background:white;
+  border-radius: 6px;
+  padding:0 5px 5px 0;
+}
+
+
+/* chart end */
+
+/*company panel start */
+
+.companyPanelContainer{
+  clear:left;
+  overflow:auto;
+}
+
+.searchForm{
+  clear:left;
+  text-align: center;
+  margin:8px 10px auto;
+  overflow:auto;
+}
+
+.searchForm > input{
+  width:40%;
+  border: 2px solid #649ec3;
+  border-radius: 6px;
+}
+
+.searchForm > button{
+  margin-left: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  background: #2b658b;
+  cursor: pointer;
+  border: 2px solid #649ec3;
+  color: white;
+}
+
+.searchForm > button:hover{
+  border:2px solid white;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    background: white;
+}
+
+.textInput{
+  font-size: 0.9em;
+  line-height: 30px;
+  height:30px;
+}
+
+.errorMessage{
+  float:left;
+  width:80%;
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  margin:5px 0 5px 10%;
+  border-radius: 6px;
+ padding:5px 0 5px 0;
+
+}
+
+.companyTags{
+  float:left;
+  width:15%;
+  background:white;
+  border: 5px solid #346e93;
+  text-align: center;
+  margin:0 3px;
+  border-radius: 6px;
+  min-height: 100px;
+  font-size: 0.9em;
+}
+
+.companyTagText{
+  margin: 2px 2px;
+}
+
+.deleteButtonWrapper{
+  text-align: right;
+  margin-right: 5px;
+}
+
+.deleteButtons{
+  margin-top: 5px;
+  background: #346e93;
+  font-size: 0.7em;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  padding: 0px 1px 3px 0px;
+
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+
+}
+
+.deleteButtons:hover{
+  background: #649ec3;
+}
+
+.hideError{
+  opacity:0;
+   -webkit-transition: opacity 2s ease-in-out;
+   -moz-transition: opacity 2s ease-in-out;
+   transition: opacity 2s ease-in-out;
+   margin-top: 4px;
+}
+
+.showError{
+  opacity:1;
+   -webkit-transition: opacity 2s ease-in-out;
+   -moz-transition: opacity 2s ease-in-out;
+   transition: opacity 2s ease-in-out;
+   margin-top: 4px;
+}
+
+/*company panel end */
+
+/* footer start */
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom:-50px;
+
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  height:50px;/*remember to change page-wrap margin bottom to same*/
+}
+.footer {
+color:white;
+
+position:relative;
+}
+
+.followMeWrapper{
+  position:absolute;
+  bottom:5px;
+  font-size: 0.6em;
+}
+
+.followMeWrapper > h3{
+  margin:3px;
+  padding:0;
+  color:white;
+  font-size: 1.5em;
+}
+
+.followMeWrapper > div {
+ margin:0;
+ padding:0;
+ vertical-align: bottom;
+}
+
+
+.followMe{
+  color:white;
+  margin-left: 2px;
+}
+
+.followMe:hover{
+  color:white;
+}
+
+.footer > span{
+  color:white;
+  position: absolute;
+  bottom: 0;
+  left:47%;
+  font-size: 0.7em;
+}
+
+.instructions{
+  text-align: center;
+  font-size: 0.7em;
+  color:white;
+}
+
+.instructions > span{
+
+}
+
+/* footer end */

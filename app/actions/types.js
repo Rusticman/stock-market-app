@@ -1,0 +1,10 @@
+export const CHART_DATA = "chart_data";
+export const INITIAL_DATA = "initial_data";
+export const DELETE_FROM_CHART = "delete_from_chart";
+export const ERROR_OPACITY = "error_opacity";
+export const LINE_GRAPH = "line_graph";
+export const ERROR_MESSAGE = "error_message";
+export const HIDE_CHART = "hide_chart";
+export const SEND_MESSAGE = "send_message";
+export const SEND_INITIAL_DATA = 'send_initial_data';
+export const SYMBOL = 'symbol';
