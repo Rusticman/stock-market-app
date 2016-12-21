@@ -5,7 +5,8 @@ DELETE_FROM_CHART, //deletes from chartData
 LINE_GRAPH,
 SEND_MESSAGE,
 SEND_INITIAL_DATA,
-SYMBOL
+SYMBOL,
+LOADED
 } from '../actions/types';
 
 
@@ -13,7 +14,8 @@ const INITIAL_STATE =  {
 socket: io.connect('https://stock-server.herokuapp.com'),
 chartData:[],
 initialData:[],
-lineGraph:null
+lineGraph:null,
+loaded:false
 }
 
 export default function(state = INITIAL_STATE,action){
@@ -32,6 +34,8 @@ export default function(state = INITIAL_STATE,action){
         return {...state, chartData:action.payload}
     case LINE_GRAPH:
         return {...state, lineGraph:action.payload}
+    case LOADED:
+        return {...state, loaded:action.payload}
 }
         return state;
 }

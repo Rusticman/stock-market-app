@@ -89,6 +89,7 @@ canvas#chart{
   width:40%;
   border: 2px solid #649ec3;
   border-radius: 6px;
+  padding: 6px;
 }
 
 .searchForm > button{

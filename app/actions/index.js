@@ -11,11 +11,12 @@ import {
   HIDE_CHART,
   SEND_MESSAGE,
   SEND_INITIAL_DATA,
-  SYMBOL
+  SYMBOL,
+  LOADED
 } from './types';
 
 
-const ROOT_URL = 'https://stock-server.herokuapp.com';
+const ROOT_URL = 'http://localhost:3000';
 
 /*data reducers start */
 
@@ -66,6 +67,7 @@ export function initialAllStocks(){
           console.log('there are no companies in the database');
           return dispatch({type:HIDE_CHART, payload:'transparent'});
         }
+      dispatch({type:LOADED,payload:true})
        dispatch({ type:INITIAL_DATA, payload:response.data.success})
 
       })

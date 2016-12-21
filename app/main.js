@@ -11,8 +11,6 @@ import Graph from './containers/graph_container';
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers, window.devToolsExtension && window.devToolsExtension());
 
-// import style
-//require('./assets/styles/app.scss');
 
 
 ReactDOM.render(

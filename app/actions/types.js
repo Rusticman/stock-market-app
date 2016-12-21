@@ -8,3 +8,4 @@ export const HIDE_CHART = "hide_chart";
 export const SEND_MESSAGE = "send_message";
 export const SEND_INITIAL_DATA = 'send_initial_data';
 export const SYMBOL = 'symbol';
+export const LOADED = 'loaded';
